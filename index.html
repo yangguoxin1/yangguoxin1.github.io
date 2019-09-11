@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--lang 语言  en English-->
+	<head>
+	<audio  src="music.mp3" hidden="false" autoplay></audio>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--X-UA-Compatible 属性是 IE 浏览器在 IE8 版本开始提供的一个特性，允许开发者通过设置 meta 标记来规定 IE 浏览器在解析网页时使用的文档模式    IE=edge 永远以最新的IE版本模式来显示网页-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>杨国鑫的个人主页</title>  
+    <link rel="stylesheet" href="./杨国鑫的个人主页_files/bootstrap.css">
+    <link href="./杨国鑫的个人主页_files/blog.css" rel="stylesheet">
+	<script>
+		function hhgg(){
+		        alert("手机都没有  哪来的微信 ！！！");
+				alert("想送我手机的，请用qq联系！");
+				window.location.href="";
+		}
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+		  width: 100%;
+		  height: 100%;
+		  background: radial-gradient(#fff, red); 
+		}
+		.containers{
+			width:300px;
+			height:300px;
+			margin:200px auto;
+			perspective:20000px;
+		}
+		.box{
+			width:300px;
+			height:300px;
+			border:1px solid transparent;
+			box-sizing: border-box;
+			position:relative;
+			transform-style:preserve-3d;
+			/*transform:rotateX(30deg) rotateY(30deg);*/
+			animation: rotate 10s linear infinite;
+		}
+		@keyframes rotate{
+			100%{
+				transform:rotatex(360deg) rotatey(360deg) rotatez(360deg);
+			}
+		}
+
+		.box-page{
+			width: 300px;
+			height: 300px;
+			position:absolute;
+			box-sizing: border-box;
+			transform-style:preserve-3d;
+		}
+
+
+		.top{
+			transform: translateZ(150px);
+		}
+		.bottom{
+			transform: translateZ(-150px) rotateX(180deg);
+		}
+		.right{
+			transform: translateX(150px) rotateY(90deg);
+		}
+		.left{
+			transform: translateX(-150px) rotateY(-90deg);
+		}
+		.after{
+			transform: translateY(-150px) rotateX(90deg);
+		}
+		.before{
+			transform: translateY(150px) rotateX(-90deg);
+		}
+
+
+		.box-page div:first-child,.box-page div:nth-child(3),.box-page div:nth-child(5),.box-page div:nth-child(7),.box-page div:nth-child(9){
+			transform: rotateY(0deg);
+		    animation: rotatey 6s linear infinite;
+		}
+
+
+		@keyframes rotatey{
+			20%{
+				transform: rotateY(0deg);
+				background-size: 300px 300px;
+			}
+			40%{
+				/*background-image: url("img/img.jpg");*/
+				transform: rotateY(540deg);
+				background-size: 100px 100px;
+			}
+			60%{
+				/*background-image: url("img/img.jpg");*/
+				transform: rotateY(540deg);
+				background-size: 100px 100px;
+			}
+			80%{
+				transform: rotateY(0deg);
+				background-size:300px 300px;
+			}
+		}
+
+		.box-page div:nth-child(2),.box-page div:nth-child(4),.box-page div:nth-child(6),.box-page div:nth-child(8){
+			transform:rotateX(0deg);
+		    animation: rotatex 6s linear infinite;
+		}
+		.hello{
+			display:none;
+		}
+		@keyframes rotatex{
+			20%{
+				transform: rotateX(0deg);
+				background-size: 300px 300px;
+			}
+			40%{
+				/*background-image: url("img/img.jpg");*/
+				transform: rotateX(540deg);
+				background-size: 100px 100px;
+			}
+			60%{
+				/*background-image: url("img/img.jpg");*/
+				transform: rotateX(540deg);
+				background-size: 100px 100px;
+			}
+			80%{
+				transform: rotateX(0deg);
+				background-size: 300px 300px;
+			}
+		}
+	</style>
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="">网页首页</a>
+          <a class="blog-nav-item" href="#part1">学习经历</a>
+          <a class="blog-nav-item" href="#part3">个人简介</a>
+		  <a class="blog-nav-item" href="#part4">照片魔方</a>
+        </nav>
+      </div>
+    </div>
+	<div class="intr">
+    	<span class="avtar"></span>
+        <p class="peointr">我叫<span style="color:blue">杨国鑫</span>，一名计算机专业的学生。</p>
+		<p class="peointr">——联系我——</p>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=1183491143&site=qq&menu=yes" target="_blank"><img src="QQ.png"style = "height:35px" /></a>
+		<img src="WeChat.jpg" onclick="hhgg()" span style = "cursor:pointer "  >
+		<a href="mailto:1183491143@qq.com" ><img src="ziyuan.png" style = "height:35px"/></a>
+    </div>
+	<div >
+		<h2 style="text-align:center;background-color:red">欢迎大家访问我的个人主页</h2>
+	</div>
+    <div class="title" id="part1">我爱我的学校</div>
+    <div class="content">
+    	<div class="pic pic1">
+    		<a href = "http://www.sdclez.cn/" target="_blank"><img src="./杨国鑫的个人主页_files/h1.jpg" alt=""></a>
+    		<p>中学-昌乐二中</p>
+    	</div>
+    	<div class="pic pic2">
+    		<a href = "http://www.ouc.edu.cn/" target="_blank"><img src="./杨国鑫的个人主页_files/h2.jpg" alt=""></a>
+    		<p>大学-海洋大学</p>
+    	</div>
+    	<div class="pic pic3">
+    		<a href ="https://www.tencent.com/zh-cn/index.html" target="_blank"><img src="./杨国鑫的个人主页_files/h3.jpg" alt="" ></a>
+    		<p>理想归宿-腾讯</p>
+    	</div>
+    </div>
+   
+	<div class="title" id="part3">究极粗略的介绍</div>
+    <div class="content">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#home" role="tab" data-toggle="tab">个人自述</a></li>
+          <li><a href="#profile" role="tab" data-toggle="tab" style = "color:blue">本科经历</a></li>
+          <li><a href="#messages" role="tab" data-toggle="tab" style = "color:red">近期博客</a></li>
+		  <li><a href="#ys" role="tab" data-toggle="tab" style = "color:yellow">兴趣爱好</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" ">
+          	<p class="text">我是一个小小小菜鸟</p>
+			<br/>
+            <p class="text">已经大三了，还是没能掌握多少人生的技能</p>
+			<br/>
+            <p class="text">虽然人生很迷茫</p>
+			<br/>
+			<p class="text">但我一直在努力(*^▽^*)</p>
+          </div>
+          <div class="tab-pane" id="profile" >
+          	<p class="text" style = "color:blue">SRDP国创项目的成员</p>
+			<br/>
+            <p class="text" style = "color:blue">美国大学生数学建模竞赛S奖</p>
+			<br/>
+            <p class="text" style = "color:blue">信息网络安全竞赛三等奖</p>
+          </div>
+          <div class="tab-pane" id="messages">
+          	<p class="text"></p>
+            <a href="https://blog.csdn.net/weixin_43731369/article/details/100318558"  class = "text"  style = "color:red"target="_blank">CSP题解(C++)</a>
+			<br/>
+			<br/>
+			<a href="https://blog.csdn.net/weixin_43731369/article/details/100631977"  class = "text"style = "color:red" target="_blank">配置github page</a>
+			<br/>
+			<br/>
+			<br/>
+            <p class="text">other</p>
+			<br/>
+          </div>
+		  <div  class="tab-pane"" id = "ys">
+			<image  src = "ys.jpg">
+		  </div>
+        </div>
+    </div>
+    <a href="" class="btt" style="display: none;">顶部</a>
+    <!-- Js-->
+    <script src="./杨国鑫的个人主页_files/jquery-1.9.1.min.js.下载"></script>
+    <script src="./杨国鑫的个人主页_files/bootstrap.min.js.下载"></script>
+    <script src="./杨国鑫的个人主页_files/plugin.js.下载"></script>
+	<div class="containers" id="part4">
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div class="box">
+		<div class="top box-page"></div>
+		<div class="bottom box-page"></div>
+		<div class="left box-page"></div>
+		<div class="right box-page"></div>
+		<div class="before box-page"></div>
+		<div class="after box-page"></div>
+	</div>
+		<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</div>
+<div class="title" id="part4" style="color:blue">文字不够，照片来凑  hhh </div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+<script type="text/javascript">
+	
+	var arr = document.querySelectorAll(".box>div");
+	for(var n = 0;n<arr.length;n++){
+		for(var i=0;i<3;i++){
+			for(var j=0;j<3;j++){
+				var divs = document.createElement("div");
+				divs.style.cssText = "width:100px;height:100px;position:absolute;box-sizing:border-box;background-image:url(img/a"+n+".jpg);background-size: 300px 300px;";
+				arr[n].appendChild(divs);
+
+				// 改变每一个div的位置
+				divs.style.left = 100*j+"px";
+				divs.style.top = 100*i+"px";
+
+				// 改变背景图相应的位置
+				divs.style.backgroundPositionX = -j*100+"px";
+				divs.style.backgroundPositionY = -i*100+"px";		
+			}
+		}
+	}
+
+</script>
+<div class="blog-footer">
+	<p>有任何疑问，请点击<a href="https://www.baidu.com/?tn=98012088_5_dg&ch=12" target="_blank">这里 </a></p>
+</div> 
+
+</body></html>
